@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="languages">
+        <item><font fgcolor="#FFFFFF">English</font></item>
+        <item><font fgcolor="#FFFFFF">Spanish</font></item>
+        <item><font fgcolor="#FFFFFF">French</font></item>
+        <!-- Add more languages as needed -->
+    </string-array>
+</resources>

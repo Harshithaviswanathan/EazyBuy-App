@@ -1,0 +1,135 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".Mains">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:src="@drawable/newer"
+        android:scaleType="centerCrop" />
+
+    <!-- Transparent Overlay for Login Form -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#10000000"
+        android:padding="25dp">
+
+        <!-- Container for Login Form -->
+        <RelativeLayout
+            android:layout_width="376dp"
+            android:layout_height="567dp"
+            android:layout_centerInParent="true"
+
+            android:padding="20dp">
+
+            <!-- Name EditText -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints="name"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Name"
+                android:padding="16dp"
+                android:textColorHint="#FFFFFF" />
+
+            <!-- Username EditText -->
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextName"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:autofillHints="username"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Username"
+                android:padding="16dp"
+                android:textColorHint="#FFFFFF" />
+
+            <!-- Password EditText -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextUsername"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColorHint="#FFFFFF" />
+
+            <!-- Confirm Password EditText -->
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPassword"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColorHint="#FFFFFF" />
+
+            <!-- Sign In Button -->
+            <Button
+                android:id="@+id/buttonSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextConfirmPassword"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text"
+                android:padding="15dp"
+                android:text="Sign Up"
+                android:textColor="#FFFFFF" />
+
+            <!-- OR Text View -->
+            <TextView
+                android:id="@+id/textViewOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonSignIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="OR"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+
+            <ImageView
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/img"
+                android:layout_below="@+id/textViewOr"
+                android:id="@+id/img"
+                />
+            <ImageView
+                android:layout_height="42dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/img_1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/img"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

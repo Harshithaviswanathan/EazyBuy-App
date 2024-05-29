@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimension for the width of category images -->
+    <dimen name="category_image_width">150dp</dimen>
+
+    <!-- Dimension for the height of shoe images -->
+    <dimen name="shoe_image_height">250dp</dimen>
+</resources>

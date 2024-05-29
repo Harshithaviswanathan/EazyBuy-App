@@ -1,0 +1,395 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Ecommerce">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_6" />
+
+    <!-- Search Option -->
+    <ImageView
+        android:layout_width="217dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:contentDescription="img_11"
+        android:src="@drawable/img_12" />
+
+    <!-- Black Bar with Top Options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="64dp">
+
+        <!-- Top Options -->
+
+        <LinearLayout
+            android:id="@+id/topOptionsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <!-- Option 1 -->
+
+            <!-- Option 2 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Orders"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Cart"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Option 3 -->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Payment"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Categories Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="128dp"> <!-- Adjust the top margin to avoid overlapping with the black bar -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Category: Dress -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dresses"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp" />
+
+            <!-- HorizontalScrollView for dress images -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="331dp"
+                android:contentDescription="Scrollable dress images"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/dressLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+                        android:src="@drawable/dress1" />
+
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+
+                        android:src="@drawable/dress2" />
+
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+
+                        android:src="@drawable/dress3" />
+
+                    <!-- Dress 4 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+
+                        android:src="@drawable/dress4" />
+
+                    <!-- Dress 5 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+
+                        android:src="@drawable/dress5" />
+
+                    <!-- Dress 6 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+
+                        android:src="@drawable/dress6" />
+
+                    <!-- Dress 7 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+                        android:src="@drawable/dress7" />
+
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+                        android:src="@drawable/dress8" />
+
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+                        android:src="@drawable/dress9" />
+
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="350dp"
+                        android:src="@drawable/dress10" />
+                    <!-- Add more dress images similarly -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!-- Category: Shoes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoes"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp" />
+
+            <!-- HorizontalScrollView for shoe images -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:contentDescription="Scrollable shoes images">
+
+                <LinearLayout
+                    android:id="@+id/shoesLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Shoe 1 -->
+                    <ImageView
+                        android:layout_width="@dimen/category_image_width"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/shoe1" />
+
+                    <!-- Shoe 2 -->
+                    <ImageView
+                        android:layout_width="@dimen/category_image_width"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/shoe2" />
+
+                    <!-- Shoe 3 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/shoe3" />
+
+                    <!-- Shoe 4 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/shoe4" />
+
+                    <!-- Shoe 5 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/shoe5" />
+
+                    <!-- Shoe 6 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/shoe6" />
+
+                    <!-- Shoe 7 -->
+                    <ImageView
+                        android:layout_width="162dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/shoe7" />
+
+                    <!-- Add more shoe images similarly -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+            <!-- Category: Accessories -->
+            <!-- Add Accessories category similarly -->
+            <!-- Category: Accessories -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accessories"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp" />
+
+            <!-- HorizontalScrollView for accessory images -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:contentDescription="Scrollable accessory images">
+
+                <LinearLayout
+                    android:id="@+id/accessoriesLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="horizontal">
+
+                    <!-- Accessory images -->
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc1"/>
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc2"
+                        />
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc3"/>
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc4"
+                        />
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc5"
+                        />
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc6"
+                        />
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc7"
+                        />
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc8"
+                        />
+
+                    <ImageView
+                        android:layout_width="152dp"
+                        android:layout_height="350dp"
+                        android:padding="15dp"
+                        android:src="@drawable/acc9"
+                        />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="#80000000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Copyright Notice -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="#80000000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copyright © 2024 EazyBuy. All rights reserved."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
